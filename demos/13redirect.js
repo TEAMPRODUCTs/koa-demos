@@ -3,6 +3,7 @@ const route = require('koa-route');
 const app = new Koa();
 
 const redirect = ctx => {
+  console.log('redirect');
   ctx.response.redirect('/');
 };
 

@@ -8,6 +8,7 @@ const app = new Koa();
 
 const main = async function(ctx) {
   const tmpdir = os.tmpdir();
+  console.log("tmpdir: " + tmpdir);
   const filePaths = [];
   const files = ctx.request.body.files || {};
 
