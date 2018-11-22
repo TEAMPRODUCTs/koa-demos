@@ -4,7 +4,7 @@ const app = new Koa();
 const main = ctx => {
   if (ctx.request.accepts('xml')) {
     ctx.response.type = 'xml';
-    ctx.response.body = '<data>Hello World</data>';
+    ctx.response.body = '<data>Hello World111</data>';
   } else if (ctx.request.accepts('json')) {
     ctx.response.type = 'json';
     ctx.response.body = { data: 'Hello World' };
